@@ -17,7 +17,7 @@ class TestCalculator(unittest.TestCase):
                                calculate_discount, purchase_amount=100, discount_amount=-5)
 
     def test_discount_more_100(self):
-        self.assertRaisesRegex(ArithmeticError, "Скидка не может быть больше сотки",
+        self.assertRaisesRegex(ArithmeticError, "Скидка не может быть больше 100",
                                calculate_discount, purchase_amount=100, discount_amount=110)
 
 
